@@ -4,7 +4,25 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Heebo", sans-serif;
+  font-family: 'Heebo', sans-serif;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+      width: 100%;
+      padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+      width: 100%;
+      padding: 5px;
+  }
 }
 .container {
   max-width: 1152px;
@@ -256,7 +274,7 @@ body {
 button:hover{
   color: aqua;
   background-color: black;
-  transition: 0.7s;
+  transition: 1s;
   transform: rotateY(360deg);
 }
 /* a href */
@@ -336,8 +354,8 @@ a:hover::after {
 .work-image:hover {
   transform: scale(1.1);
   box-shadow: 0 10px 20px gray; 
-  transform: rotateY(360deg);
-  
+  transition: 0.7s;
+  transform: rotate(360deg);
 }
 
 .work-image::before {
@@ -358,5 +376,3 @@ a:hover::after {
       transform: translateX(100%) skewX(25deg);
   }
 }
-
-
